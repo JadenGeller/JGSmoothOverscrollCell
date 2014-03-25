@@ -1,0 +1,492 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D73BF5BE18CC7D7F00BACEEE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D73BF5BD18CC7D7F00BACEEE /* Foundation.framework */; };
+		D73BF5C018CC7D7F00BACEEE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D73BF5BF18CC7D7F00BACEEE /* CoreGraphics.framework */; };
+		D73BF5C218CC7D7F00BACEEE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D73BF5C118CC7D7F00BACEEE /* UIKit.framework */; };
+		D73BF5C818CC7D7F00BACEEE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D73BF5C618CC7D7F00BACEEE /* InfoPlist.strings */; };
+		D73BF5CA18CC7D7F00BACEEE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D73BF5C918CC7D7F00BACEEE /* main.m */; };
+		D73BF5CE18CC7D7F00BACEEE /* JGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D73BF5CD18CC7D7F00BACEEE /* JGAppDelegate.m */; };
+		D73BF5D118CC7D7F00BACEEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D73BF5CF18CC7D7F00BACEEE /* Main.storyboard */; };
+		D73BF5D618CC7D7F00BACEEE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D73BF5D518CC7D7F00BACEEE /* Images.xcassets */; };
+		D73BF5DD18CC7D7F00BACEEE /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D73BF5DC18CC7D7F00BACEEE /* XCTest.framework */; };
+		D73BF5DE18CC7D7F00BACEEE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D73BF5BD18CC7D7F00BACEEE /* Foundation.framework */; };
+		D73BF5DF18CC7D7F00BACEEE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D73BF5C118CC7D7F00BACEEE /* UIKit.framework */; };
+		D73BF5E718CC7D7F00BACEEE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D73BF5E518CC7D7F00BACEEE /* InfoPlist.strings */; };
+		D73BF5E918CC7D7F00BACEEE /* JGScrollCellExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D73BF5E818CC7D7F00BACEEE /* JGScrollCellExampleTests.m */; };
+		D73BF5F718CC7FCB00BACEEE /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D73BF5F618CC7FCB00BACEEE /* CollectionViewController.m */; };
+		D7564E4D18E16E3D003AB5D0 /* JGSmoothOverscrollCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D7564E4A18E16E3D003AB5D0 /* JGSmoothOverscrollCell.m */; };
+		D7564E4E18E16E3D003AB5D0 /* JGSmoothOverscrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = D7564E4C18E16E3D003AB5D0 /* JGSmoothOverscrollView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D73BF5E018CC7D7F00BACEEE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D73BF5B218CC7D7F00BACEEE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D73BF5B918CC7D7F00BACEEE;
+			remoteInfo = JGScrollCellExample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D73BF5BA18CC7D7F00BACEEE /* JGScrollCellExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JGScrollCellExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D73BF5BD18CC7D7F00BACEEE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D73BF5BF18CC7D7F00BACEEE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D73BF5C118CC7D7F00BACEEE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D73BF5C518CC7D7F00BACEEE /* JGScrollCellExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JGScrollCellExample-Info.plist"; sourceTree = "<group>"; };
+		D73BF5C718CC7D7F00BACEEE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D73BF5C918CC7D7F00BACEEE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D73BF5CB18CC7D7F00BACEEE /* JGScrollCellExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JGScrollCellExample-Prefix.pch"; sourceTree = "<group>"; };
+		D73BF5CC18CC7D7F00BACEEE /* JGAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JGAppDelegate.h; sourceTree = "<group>"; };
+		D73BF5CD18CC7D7F00BACEEE /* JGAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JGAppDelegate.m; sourceTree = "<group>"; };
+		D73BF5D018CC7D7F00BACEEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D73BF5D518CC7D7F00BACEEE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D73BF5DB18CC7D7F00BACEEE /* JGScrollCellExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JGScrollCellExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D73BF5DC18CC7D7F00BACEEE /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		D73BF5E418CC7D7F00BACEEE /* JGScrollCellExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JGScrollCellExampleTests-Info.plist"; sourceTree = "<group>"; };
+		D73BF5E618CC7D7F00BACEEE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D73BF5E818CC7D7F00BACEEE /* JGScrollCellExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JGScrollCellExampleTests.m; sourceTree = "<group>"; };
+		D73BF5F518CC7FCB00BACEEE /* CollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CollectionViewController.h; path = ../CollectionViewController.h; sourceTree = "<group>"; };
+		D73BF5F618CC7FCB00BACEEE /* CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CollectionViewController.m; path = ../CollectionViewController.m; sourceTree = "<group>"; };
+		D7564E4918E16E3D003AB5D0 /* JGSmoothOverscrollCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGSmoothOverscrollCell.h; sourceTree = "<group>"; };
+		D7564E4A18E16E3D003AB5D0 /* JGSmoothOverscrollCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGSmoothOverscrollCell.m; sourceTree = "<group>"; };
+		D7564E4B18E16E3D003AB5D0 /* JGSmoothOverscrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGSmoothOverscrollView.h; sourceTree = "<group>"; };
+		D7564E4C18E16E3D003AB5D0 /* JGSmoothOverscrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGSmoothOverscrollView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D73BF5B718CC7D7F00BACEEE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D73BF5C018CC7D7F00BACEEE /* CoreGraphics.framework in Frameworks */,
+				D73BF5C218CC7D7F00BACEEE /* UIKit.framework in Frameworks */,
+				D73BF5BE18CC7D7F00BACEEE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D73BF5D818CC7D7F00BACEEE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D73BF5DD18CC7D7F00BACEEE /* XCTest.framework in Frameworks */,
+				D73BF5DF18CC7D7F00BACEEE /* UIKit.framework in Frameworks */,
+				D73BF5DE18CC7D7F00BACEEE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D73BF5B118CC7D7F00BACEEE = {
+			isa = PBXGroup;
+			children = (
+				D7564E4918E16E3D003AB5D0 /* JGSmoothOverscrollCell.h */,
+				D7564E4A18E16E3D003AB5D0 /* JGSmoothOverscrollCell.m */,
+				D7564E4B18E16E3D003AB5D0 /* JGSmoothOverscrollView.h */,
+				D7564E4C18E16E3D003AB5D0 /* JGSmoothOverscrollView.m */,
+				D73BF5C318CC7D7F00BACEEE /* JGScrollCellExample */,
+				D73BF5E218CC7D7F00BACEEE /* JGScrollCellExampleTests */,
+				D73BF5BC18CC7D7F00BACEEE /* Frameworks */,
+				D73BF5BB18CC7D7F00BACEEE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D73BF5BB18CC7D7F00BACEEE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D73BF5BA18CC7D7F00BACEEE /* JGScrollCellExample.app */,
+				D73BF5DB18CC7D7F00BACEEE /* JGScrollCellExampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D73BF5BC18CC7D7F00BACEEE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D73BF5BD18CC7D7F00BACEEE /* Foundation.framework */,
+				D73BF5BF18CC7D7F00BACEEE /* CoreGraphics.framework */,
+				D73BF5C118CC7D7F00BACEEE /* UIKit.framework */,
+				D73BF5DC18CC7D7F00BACEEE /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D73BF5C318CC7D7F00BACEEE /* JGScrollCellExample */ = {
+			isa = PBXGroup;
+			children = (
+				D73BF5CC18CC7D7F00BACEEE /* JGAppDelegate.h */,
+				D73BF5CD18CC7D7F00BACEEE /* JGAppDelegate.m */,
+				D73BF5CF18CC7D7F00BACEEE /* Main.storyboard */,
+				D73BF5F518CC7FCB00BACEEE /* CollectionViewController.h */,
+				D73BF5F618CC7FCB00BACEEE /* CollectionViewController.m */,
+				D73BF5D518CC7D7F00BACEEE /* Images.xcassets */,
+				D73BF5C418CC7D7F00BACEEE /* Supporting Files */,
+			);
+			path = JGScrollCellExample;
+			sourceTree = "<group>";
+		};
+		D73BF5C418CC7D7F00BACEEE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D73BF5C518CC7D7F00BACEEE /* JGScrollCellExample-Info.plist */,
+				D73BF5C618CC7D7F00BACEEE /* InfoPlist.strings */,
+				D73BF5C918CC7D7F00BACEEE /* main.m */,
+				D73BF5CB18CC7D7F00BACEEE /* JGScrollCellExample-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D73BF5E218CC7D7F00BACEEE /* JGScrollCellExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				D73BF5E818CC7D7F00BACEEE /* JGScrollCellExampleTests.m */,
+				D73BF5E318CC7D7F00BACEEE /* Supporting Files */,
+			);
+			path = JGScrollCellExampleTests;
+			sourceTree = "<group>";
+		};
+		D73BF5E318CC7D7F00BACEEE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D73BF5E418CC7D7F00BACEEE /* JGScrollCellExampleTests-Info.plist */,
+				D73BF5E518CC7D7F00BACEEE /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D73BF5B918CC7D7F00BACEEE /* JGScrollCellExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D73BF5EC18CC7D7F00BACEEE /* Build configuration list for PBXNativeTarget "JGScrollCellExample" */;
+			buildPhases = (
+				D73BF5B618CC7D7F00BACEEE /* Sources */,
+				D73BF5B718CC7D7F00BACEEE /* Frameworks */,
+				D73BF5B818CC7D7F00BACEEE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JGScrollCellExample;
+			productName = JGScrollCellExample;
+			productReference = D73BF5BA18CC7D7F00BACEEE /* JGScrollCellExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D73BF5DA18CC7D7F00BACEEE /* JGScrollCellExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D73BF5EF18CC7D7F00BACEEE /* Build configuration list for PBXNativeTarget "JGScrollCellExampleTests" */;
+			buildPhases = (
+				D73BF5D718CC7D7F00BACEEE /* Sources */,
+				D73BF5D818CC7D7F00BACEEE /* Frameworks */,
+				D73BF5D918CC7D7F00BACEEE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D73BF5E118CC7D7F00BACEEE /* PBXTargetDependency */,
+			);
+			name = JGScrollCellExampleTests;
+			productName = JGScrollCellExampleTests;
+			productReference = D73BF5DB18CC7D7F00BACEEE /* JGScrollCellExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D73BF5B218CC7D7F00BACEEE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = JG;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Jaden Geller";
+				TargetAttributes = {
+					D73BF5DA18CC7D7F00BACEEE = {
+						TestTargetID = D73BF5B918CC7D7F00BACEEE;
+					};
+				};
+			};
+			buildConfigurationList = D73BF5B518CC7D7F00BACEEE /* Build configuration list for PBXProject "JGScrollCellExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D73BF5B118CC7D7F00BACEEE;
+			productRefGroup = D73BF5BB18CC7D7F00BACEEE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D73BF5B918CC7D7F00BACEEE /* JGScrollCellExample */,
+				D73BF5DA18CC7D7F00BACEEE /* JGScrollCellExampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D73BF5B818CC7D7F00BACEEE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D73BF5D618CC7D7F00BACEEE /* Images.xcassets in Resources */,
+				D73BF5C818CC7D7F00BACEEE /* InfoPlist.strings in Resources */,
+				D73BF5D118CC7D7F00BACEEE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D73BF5D918CC7D7F00BACEEE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D73BF5E718CC7D7F00BACEEE /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D73BF5B618CC7D7F00BACEEE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7564E4E18E16E3D003AB5D0 /* JGSmoothOverscrollView.m in Sources */,
+				D73BF5F718CC7FCB00BACEEE /* CollectionViewController.m in Sources */,
+				D7564E4D18E16E3D003AB5D0 /* JGSmoothOverscrollCell.m in Sources */,
+				D73BF5CA18CC7D7F00BACEEE /* main.m in Sources */,
+				D73BF5CE18CC7D7F00BACEEE /* JGAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D73BF5D718CC7D7F00BACEEE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D73BF5E918CC7D7F00BACEEE /* JGScrollCellExampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D73BF5E118CC7D7F00BACEEE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D73BF5B918CC7D7F00BACEEE /* JGScrollCellExample */;
+			targetProxy = D73BF5E018CC7D7F00BACEEE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D73BF5C618CC7D7F00BACEEE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D73BF5C718CC7D7F00BACEEE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D73BF5CF18CC7D7F00BACEEE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D73BF5D018CC7D7F00BACEEE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D73BF5E518CC7D7F00BACEEE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D73BF5E618CC7D7F00BACEEE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D73BF5EA18CC7D7F00BACEEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D73BF5EB18CC7D7F00BACEEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D73BF5ED18CC7D7F00BACEEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JGScrollCellExample/JGScrollCellExample-Prefix.pch";
+				INFOPLIST_FILE = "JGScrollCellExample/JGScrollCellExample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D73BF5EE18CC7D7F00BACEEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JGScrollCellExample/JGScrollCellExample-Prefix.pch";
+				INFOPLIST_FILE = "JGScrollCellExample/JGScrollCellExample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D73BF5F018CC7D7F00BACEEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/JGScrollCellExample.app/JGScrollCellExample";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JGScrollCellExample/JGScrollCellExample-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "JGScrollCellExampleTests/JGScrollCellExampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		D73BF5F118CC7D7F00BACEEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/JGScrollCellExample.app/JGScrollCellExample";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JGScrollCellExample/JGScrollCellExample-Prefix.pch";
+				INFOPLIST_FILE = "JGScrollCellExampleTests/JGScrollCellExampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D73BF5B518CC7D7F00BACEEE /* Build configuration list for PBXProject "JGScrollCellExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D73BF5EA18CC7D7F00BACEEE /* Debug */,
+				D73BF5EB18CC7D7F00BACEEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D73BF5EC18CC7D7F00BACEEE /* Build configuration list for PBXNativeTarget "JGScrollCellExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D73BF5ED18CC7D7F00BACEEE /* Debug */,
+				D73BF5EE18CC7D7F00BACEEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D73BF5EF18CC7D7F00BACEEE /* Build configuration list for PBXNativeTarget "JGScrollCellExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D73BF5F018CC7D7F00BACEEE /* Debug */,
+				D73BF5F118CC7D7F00BACEEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D73BF5B218CC7D7F00BACEEE /* Project object */;
+}
