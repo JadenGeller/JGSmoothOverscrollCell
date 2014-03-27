@@ -46,50 +46,35 @@
     
     self.scrollEnabled = YES;
     
-    _contentView = [[UIView alloc]init];
-    [super addSubview:_contentView];
-    
+    self.contentView = [[UIView alloc]init];
     
     self.backgroundColor = [UIColor clearColor];
-    
-//    [self observeValueForKeyPath:@"frame" ofObject:self change:nil context:0];
 }
 
-//-(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context{
-//
-//    [self updateOverscrollSize];
-//}
+-(void)setContentView:(UIView *)contentView{
+    _contentView = contentView;
+    
+    [super addSubview:_contentView];
+    [self layoutIfNeeded];
+}
 
-//-(void)setBounds:(CGRect)bounds{
-//    [super setBounds:bounds];
-//    [self updateOverscrollSize];
-////    NSLog(@"bo %@",NSStringFromCGRect(bounds));
-//}
-//
 -(void)setFrame:(CGRect)frame{
     [super setFrame:frame];
     [self updateOverscrollSize];
 }
 
 -(void)setOverscrollSize:(UIEdgeInsets)overscrollSize{
-//    BOOL isCentered = CGPointEqualToPoint(self.returnPoint, self.contentOffset);
-    
     _overscrollSize = overscrollSize;
-
-    [self updateOverscrollSize];
-//    if (isCentered) [self resetPosition];
+    
+    [self layoutIfNeeded];
 }
 
 -(void)resetPosition{
     self.contentOffset = self.returnPoint;
 }
 
--(BOOL)overscrollVertical{
-    return (self.overscroll.top + self.overscroll.bottom > 0);
-}
-
--(BOOL)overscrollHorizontal{
-    return (self.overscroll.left + self.overscroll.right > 0);
+-(void)layoutSubviews{
+    [self updateOverscrollSize];
 }
 
 -(void)updateOverscrollSize{
@@ -98,20 +83,7 @@
     self.contentSize = CGSizeMake(self.frame.size.width + self.overscroll.left + self.overscroll.right, self.frame.size.height + self.overscroll.top + self.overscroll.bottom);
     
     self.contentView.frame = CGRectMake(self.overscroll.left, self.overscroll.top, self.frame.size.width, self.frame.size.height);
-    
-//    NSLog(@"%@",NSStringFromUIEdgeInsets(self.overscroll));
-    
-    //[self resetPosition];
 }
-
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect
-{
-    // Drawing code
-}
-*/
 
 -(void)scrollViewWillEndDragging:(UIScrollView *)scrollView withVelocity:(CGPoint)velocity targetContentOffset:(inout CGPoint *)targetContentOffset{
     if ([self directionForContentOffset:*targetContentOffset] == JGOverscrollDirectionNone) {

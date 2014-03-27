@@ -26,7 +26,7 @@ typedef enum{
 @interface JGSmoothOverscrollView : UIScrollView <UIScrollViewDelegate>
 
 @property (nonatomic) UIEdgeInsets overscrollSize;
-@property (nonatomic, readonly) UIView *contentView;
+@property (nonatomic) UIView *contentView;
 
 -(void)resetPosition;
 
